@@ -1,0 +1,34 @@
+//
+//  PrefixHeader.pch
+//  ChangeConfigTest
+//
+//  Created by crazy on 16/5/30.
+//  Copyright © 2016年 crazy. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#if defined (CONFIGURATION_Debug)
+
+#define TESTHOST @"debug"
+
+#endif
+
+
+#if defined (CONFIGURATION_AdHoc)
+
+#define TESTHOST @"ADHOC"
+
+#endif
+
+
+
+#if defined (CONFIGURATION_Release)
+
+#define TESTHOST @"release"
+
+#endif
+
+
+#endif /* PrefixHeader_pch */
